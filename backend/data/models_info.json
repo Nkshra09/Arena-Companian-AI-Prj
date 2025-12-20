@@ -1,0 +1,75 @@
+{
+  "models": [
+    {
+      "model_name": "GPT-4",
+      "model_type": "LLM",
+      "provider": "OpenAI",
+      "description": "Most capable model for complex tasks requiring deep understanding and reasoning",
+      "best_for": ["creative writing", "complex problem solving", "detailed explanations", "code generation"],
+      "avg_response_time": 2.5,
+      "context_window": 128000,
+      "popular": true
+    },
+    {
+      "model_name": "Claude-3",
+      "model_type": "LLM",
+      "provider": "Anthropic",
+      "description": "Excellent for technical accuracy, analysis, and documentation",
+      "best_for": ["documentation", "technical writing", "analysis", "research", "coding"],
+      "avg_response_time": 2.0,
+      "context_window": 200000,
+      "popular": true
+    },
+    {
+      "model_name": "Gemini Pro",
+      "model_type": "LLM",
+      "provider": "Google",
+      "description": "Fast and efficient for general-purpose tasks",
+      "best_for": ["quick answers", "general queries", "summarization", "translation"],
+      "avg_response_time": 1.7,
+      "context_window": 32000,
+      "popular": true
+    },
+    {
+      "model_name": "Llama-3-70B",
+      "model_type": "LLM",
+      "provider": "Meta",
+      "description": "Open-source powerhouse with versatile capabilities",
+      "best_for": ["general purpose", "open-source projects", "customization", "research"],
+      "avg_response_time": 2.3,
+      "context_window": 8000,
+      "popular": true
+    },
+    {
+      "model_name": "Mistral-7B",
+      "model_type": "SLM",
+      "provider": "Mistral AI",
+      "description": "Efficient small model with impressive performance",
+      "best_for": ["quick responses", "resource-constrained environments", "edge deployment"],
+      "avg_response_time": 1.4,
+      "context_window": 8000,
+      "popular": false
+    },
+    {
+      "model_name": "Phi-3",
+      "model_type": "SLM",
+      "provider": "Microsoft",
+      "description": "Compact model optimized for speed and efficiency",
+      "best_for": ["fast inference", "mobile devices", "low-latency applications"],
+      "avg_response_time": 1.1,
+      "context_window": 4000,
+      "popular": false
+    }
+  ],
+  "task_recommendations": {
+    "documentation": ["Claude-3", "GPT-4"],
+    "creative writing": ["GPT-4", "Claude-3"],
+    "coding": ["Claude-3", "GPT-4", "Llama-3-70B"],
+    "quick answers": ["Gemini Pro", "Mistral-7B", "Phi-3"],
+    "research": ["Claude-3", "GPT-4", "Llama-3-70B"],
+    "translation": ["Gemini Pro", "GPT-4"],
+    "summarization": ["Gemini Pro", "Claude-3"],
+    "technical writing": ["Claude-3", "GPT-4"],
+    "general purpose": ["Llama-3-70B", "Gemini Pro", "GPT-4"]
+  }
+}
